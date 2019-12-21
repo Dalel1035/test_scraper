@@ -35,7 +35,7 @@ def get_google_new_results (term, count):
   for element in elements[:count]:
     headline = element.childNodes[0].data
     for link in links:
-      url+link.childNodes[0].data.split('=')[-1]
+      url=link.childNodes[0].data.split('=')[-1]
       newssearch = headline + ' - ' + url
       results.append( newssearch)
       return results
