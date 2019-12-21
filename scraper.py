@@ -39,7 +39,7 @@ def get_google_new_results (term, count):
       newssearch = headline + ' - ' + url
       results.append( newssearch)
       return results
-    item = get_google_new_results ( 'apple', 2 )
+    item = get_google_new_results ( 'apple', 10 )
     for i,e in enumerate(items):
       print '%d: %s' %(i+1,e,)
       
